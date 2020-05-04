@@ -1,4 +1,3 @@
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,46 +5,191 @@
 }
 
 body {
-  width: 100vw;
-overflow-x: hidden;
-    --darkaccent: #222222;
-  --lightaccent: #aaaaaa;
-  --bcgcolor: #eeeeee;
-  font-family: ;
-  color: var(--darkaccent);
+  width: 100%;
+  overflow-x: hidden;
+  --dark: #2e323f;
+  --medium: #3b4050;
+  --light: #6f737f;
+  --accent: #a59678;
+  color: var(--dark);
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   width: 100%;
 }
 
-/*======= A LINK DEFAULT CSS ===========*/
+/*=================== TYPOGRAPHY =======================*/
+h1, h2, h3, nav, .abutton {
+  font-family: 'Anton', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2em;
+  padding: 1em 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  padding: 1em 0;
+}
+
+nav {
+  font-size: 1.1rem;
+}
+
+.first p, article p, .abutton {
+  font-size: 1.25rem;
+}
+
+article h2 {
+  font-size: 1.6rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+}
+
+nav, .abutton {
+  text-transform: uppercase;
+}
+
+/*============ A LINK DEFAULT CSS ===========*/
 a:link, a:visited {
-  color: (internal value);
+  color: white;
   text-decoration: none;
   cursor: auto;
 }
 
-a:link:active, a:visited:active {
-  color: (internal value);
+a:hover, a:link:active, a:visited:active {
+  color: var(--light);
 }
 
+/*===================== SECTIONs COLORS ===================*/
+.wrapper {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+header, .first, footer, .box h2, .footer-title {
+  color: white;
+}
+
+h1 span, h2 {
+  color: var(--accent);
+}
+
+header {
+  background-color: var(--medium);
+}
+
+.first, footer {
+  background-color: var(--dark);
+}
+
+.box {
+  margin: 1em auto;
+  padding: 1em;
+  background-color: var(--dark);
+  color: white;
+}
+
+.fourth a, footer p {
+  color: var(--light);
+}
 
 /*======= NAVIGATION ===========*/
+.hamburger {
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin: 2.5em;
+}
 
+.hamburger button {
+  border: solid 2px white;
+  width: 24px;
+  height: 0;
+  position: absolute;
+  margin-top: 7px;
+}
 
+.menu-toggle {
+  display: none;
+}
 
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
+.logo {
+  width: 4em;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.menu li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
 
+a.libutton {
+  background-color: white;
+  color: var(--medium);
+  border-radius: 1em;
+  padding: 0.5em 1em
+}
+
+a.libutton:hover {
+  color: white;
+  background-color: var(--light)
+}
+
+/*======= SECTION FIRST ===========*/
+.abutton {
+  background-color: var(--accent);
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  margin: 1.5em 0;
+}
+
+a.abutton:hover {
+  color: white;
+  background-color: var(--light)
+}
+
+/*======= SECTION SECOND===========*/
+.second {
+  background-color: beige;
+  text-align: center;
+}
+
+.second p {
+  margin-bottom: 2em;
+}
+
+/*======= SECTION THIRD - ARTICLE and aside ===========*/
+article img, .container {
+  margin: 3em auto;
+}
+
+/*======= SECTION FOURTH - FOOTER ===========*/
+footer li {
+  list-style: none;
+  margin: 1em auto;
+}
+
+.signature {
+  text-align: center;
+}
 
 /*======= MEDIA QUERY ===========*/
 @media (min-width:700px) {
-/*======= ================= ===========*/
-/*======= ================== ===========*/
+  /*======= ================= ===========*/
+  /*======= ================== ===========*/
 }
