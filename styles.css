@@ -191,9 +191,6 @@ footer li {
 
 /*======= MEDIA QUERY FOR TABLETS ===========*/
 @media (min-width:700px) {
-
-
-
   .hamburger {
     display: none;
   }
@@ -214,98 +211,88 @@ footer li {
     margin: 0;
   }
 
-
-.wrapcol, .second .wraprow {
-  display: flex;
-  text-align: center;
-}
-
-.box + .box,
-.col + .col {
-  margin-left: 2em;
+  .wrapcol, .second .wraprow {
+    display: flex;
+    text-align: center;
   }
 
-h1 {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
+  .box+.box,
+  .col+.col {
+    margin-left: 2em;
+  }
 
-.fourth .wraprow {
-  display: flex;
-}
+  h1 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
 
-.about {
-  width: 30%;
-}
+  .fourth .wraprow {
+    display: flex;
+  }
 
+  .about {
+    width: 30%;
+  }
 }
 
 /*======= MEDIA QUERY FOR DESKTOPS & NAVIGATION===========*/
-
 @media (min-width:1000px) {
 
+  /*======= MEDIA QUERY FOR DESKTOPS ===========*/
+  .wraprow, .main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
-/*======= MEDIA QUERY FOR DESKTOPS ===========*/
-.wraprow, .main {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
+  .first .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
-.first .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
+  h1 {
+    text-align: left;
+    width: 42%;
+    font-size: 4rem;
+    margin-right: 10%;
+  }
 
-h1 {
-  text-align: left;
-  width: 42%;
-  font-size: 4rem;
-  margin-right: 10%;
-}
+  .first .container {
+    width: 48%;
+  }
 
-.first .container {
-  width: 48%;
-}
+  .footer-title {
+    text-align: center;
+  }
 
-.footer-title {
-  text-align: center;
-}
+  .col+.col {
+    margin-left: 10%;
+  }
 
-.col + .col {
-  margin-left: 10%;
-}
+  .wrapcol {
+    flex-direction: column;
+  }
 
-.wrapcol {
-  flex-direction: column;
-}
+  .box, .box+.box {
+    margin-left: 0;
+  }
 
-.box, .box + .box {
-  margin-left: 0;
-}
+  .box+.box {
+    margin-top: 2em;
+  }
 
-.box + .box {
-  margin-top: 2em;
-}
+  article {
+    width: 60%;
+    margin-right: 10%
+  }
 
-article {
-  width: 60%;
-  margin-right: 10%
-}
+  aside {
+    width: 30%;
+  }
 
-aside {
-  width: 30%;
-
-}
-
-.third {
-  padding-bottom: 5rem;
-}
-
-
-
-
-
+  .third {
+    padding-bottom: 5rem;
+  }
 }
